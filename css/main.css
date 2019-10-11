@@ -12,19 +12,48 @@ p {
   text-shadow: 0 0 10px rgba(255, 255, 255, .7);
 }
 
-.btn {
+.btn-ghost {
   color: #b4fff4;
-  background-image: url("../images/rocket.svg");
-  background-repeat: no-repeat;
-  background-position: 7em center;
-  background-size: 1.2em auto;
   border-color: #90ccc3;
   text-align: left;
   border-radius: 8px;
+  top: 0;
+  transition: all .2s linear;
 }
 
 .btn:hover {
   background-color: rgba(180, 255, 244, .2);
   border-color: #90ccc3;
   color: #90ccc3;
+}
+
+.btn-ghost:hover .btn-rocket,
+.btn-ghost:focus .btn-rocket,
+.btn-ghost:active .btn-rocket {
+  top: -40%;
+}
+
+.btn-ghost:active {
+  background-color: rgba(180, 255, 244, .2);
+  border-color: #90ccc3;
+  color: #90ccc3;
+  top: .3em;
+}
+
+.btn:focus {
+  background-color: rgba(180, 255, 244, .2);
+  border-color: #90ccc3;
+  color: #90ccc3;
+}
+
+.btn-bottom {
+  position: absolute;
+  border: 3px solid #90ccc3;
+  width: calc(100% + 6px);
+  min-height: .7em;
+  bottom: 35%;
+  left: 42.2%;
+  border-top: 0;
+  max-width: 157px;
+  border-radius: 0 0 8px 8px;
 }
